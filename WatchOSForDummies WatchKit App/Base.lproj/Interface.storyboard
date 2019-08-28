@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOSForDummies_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" spacing="0.0" id="G1v-cO-shm">
+                            <items>
+                                <label height="20" alignment="center" text="Welcome!" textAlignment="center" id="Vha-Yy-5G3"/>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="10" top="10" bottom="10"/>
+                        </group>
+                        <table alignment="left" id="xhO-mh-FWh">
+                            <items>
+                                <tableRow identifier="RowController" id="8Wr-Ju-01t" customClass="RowController" customModule="WatchOSForDummies_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="ewn-Eb-3ui">
+                                        <items>
+                                            <group width="131" alignment="left" spacing="5" id="eKK-oz-YWj">
+                                                <items>
+                                                    <imageView width="1" widthAdjustment="-90" height="1" heightAdjustment="-15" alignment="left" verticalAlignment="center" id="6pu-pt-JV7"/>
+                                                    <label width="95" height="1" alignment="left" verticalAlignment="center" text="label" textAlignment="center" id="oau-PJ-fiy"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imageRow" destination="6pu-pt-JV7" id="7El-IH-qNh"/>
+                                        <outlet property="itemRowLabel" destination="oau-PJ-fiy" id="btH-bp-4zB"/>
+                                        <outlet property="rowGroup" destination="ewn-Eb-3ui" id="v1S-zo-WwD"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="optionsTable" destination="xhO-mh-FWh" id="sSE-va-M8g"/>
+                        <outlet property="welcomeLabel" destination="Vha-Yy-5G3" id="cTS-Ia-9gM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="65"/>
+        </scene>
+    </scenes>
+</document>
