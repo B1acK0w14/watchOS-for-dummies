@@ -48,4 +48,15 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        switch rowIndex {
+        case 0:
+            super.pushController(withName: "countCoffeeId", context: nil)
+        case 1:
+            super.pushController(withName: "flipCoinId", context: nil)
+        default:
+            fatalError("Out of Index")
+        }
+    }
 }

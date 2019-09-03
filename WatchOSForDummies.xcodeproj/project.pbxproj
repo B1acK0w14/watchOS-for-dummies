@@ -18,6 +18,8 @@
 		8D04C940230C4CF90049E971 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04C93F230C4CF90049E971 /* InterfaceController.swift */; };
 		8D04C942230C4CF90049E971 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04C941230C4CF90049E971 /* ExtensionDelegate.swift */; };
 		8D04C944230C4CFA0049E971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D04C943230C4CFA0049E971 /* Assets.xcassets */; };
+		8D6EB053231ECDC70046DBA6 /* CountCoffeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EB052231ECDC70046DBA6 /* CountCoffeeController.swift */; };
+		8D6EB056231ED13A0046DBA6 /* FlipCoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EB055231ED13A0046DBA6 /* FlipCoinController.swift */; };
 		8DDD20BE230EF23C00995CB3 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD20BD230EF23C00995CB3 /* RowController.swift */; };
 		8DE4C0D72314624200460C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE4C0D62314624200460C56 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		8D04C941230C4CF90049E971 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		8D04C943230C4CFA0049E971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D04C945230C4CFA0049E971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6EB052231ECDC70046DBA6 /* CountCoffeeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCoffeeController.swift; sourceTree = "<group>"; };
+		8D6EB055231ED13A0046DBA6 /* FlipCoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCoinController.swift; sourceTree = "<group>"; };
 		8DDD20BD230EF23C00995CB3 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 		8DE4C0D62314624200460C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,13 +152,23 @@
 		8D04C93E230C4CF90049E971 /* WatchOSForDummies WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8D04C93F230C4CF90049E971 /* InterfaceController.swift */,
-				8D04C941230C4CF90049E971 /* ExtensionDelegate.swift */,
+				8D6EB054231ECDED0046DBA6 /* Controllers */,
 				8DDD20BC230EF1C900995CB3 /* TableView */,
+				8D04C941230C4CF90049E971 /* ExtensionDelegate.swift */,
 				8D04C943230C4CFA0049E971 /* Assets.xcassets */,
 				8D04C945230C4CFA0049E971 /* Info.plist */,
 			);
 			path = "WatchOSForDummies WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8D6EB054231ECDED0046DBA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D04C93F230C4CF90049E971 /* InterfaceController.swift */,
+				8D6EB052231ECDC70046DBA6 /* CountCoffeeController.swift */,
+				8D6EB055231ED13A0046DBA6 /* FlipCoinController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8DDD20BC230EF1C900995CB3 /* TableView */ = {
@@ -308,7 +322,9 @@
 			files = (
 				8DDD20BE230EF23C00995CB3 /* RowController.swift in Sources */,
 				8D04C942230C4CF90049E971 /* ExtensionDelegate.swift in Sources */,
+				8D6EB056231ED13A0046DBA6 /* FlipCoinController.swift in Sources */,
 				8D04C940230C4CF90049E971 /* InterfaceController.swift in Sources */,
+				8D6EB053231ECDC70046DBA6 /* CountCoffeeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

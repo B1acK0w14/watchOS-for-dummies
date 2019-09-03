@@ -50,5 +50,19 @@
             </objects>
             <point key="canvasLocation" x="34" y="65"/>
         </scene>
+        <!--countCoffeeId-->
+        <scene sceneID="QUV-et-q8b">
+            <objects>
+                <controller identifier="countCoffeeId" id="AaJ-Bi-M2i" customClass="CountCoffeeController" customModule="WatchOSForDummies_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="-15"/>
+        </scene>
+        <!--flipCoinId-->
+        <scene sceneID="93J-Ng-hcH">
+            <objects>
+                <controller identifier="flipCoinId" id="own-XK-XaW" customClass="FlipCoinController" customModule="WatchOSForDummies_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="324"/>
+        </scene>
     </scenes>
 </document>
