@@ -13,11 +13,17 @@ import Foundation
 class FlipCoinController: WKInterfaceController {
     
     //MARK: - Properties
+    @IBOutlet weak var flipCoinImage: WKInterfaceImage!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        animateImage(nameImage: "flipcoin")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.showResult()
+            self.flipCoinImage.stopAnimating()
+        }
     }
     
     override func willActivate() {
@@ -31,4 +37,15 @@ class FlipCoinController: WKInterfaceController {
     }
     
     //MARK: - Actions
+    func animateImage(nameImage: String) {
+        flipCoinImage.setImageNamed(nameImage)
+        flipCoinImage.startAnimatingWithImages(in: NSRange(location: 0, length: 132), duration: 2, repeatCount: 0)
+    }
+    
+    func showResult() {
+        //ANNOTATION: - True for heads and false for tails
+        let flipedCoin = Bool.random()
+        let stringToShow = (flipedCoin == true) ? "Heads" : "Tails"
+        self.presentAlert(withTitle: stringToShow, message: nil, preferredStyle: .alert, actions: [WKAlertAction(title: "OK", style: .default, handler: {})])
+    }
 }

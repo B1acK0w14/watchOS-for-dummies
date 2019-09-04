@@ -60,7 +60,14 @@
         <!--flipCoinId-->
         <scene sceneID="93J-Ng-hcH">
             <objects>
-                <controller identifier="flipCoinId" id="own-XK-XaW" customClass="FlipCoinController" customModule="WatchOSForDummies_WatchKit_Extension"/>
+                <controller identifier="flipCoinId" id="own-XK-XaW" customClass="FlipCoinController" customModule="WatchOSForDummies_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="l7i-t4-cs8"/>
+                    </items>
+                    <connections>
+                        <outlet property="flipCoinImage" destination="l7i-t4-cs8" id="TuP-Xr-Ghw"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="361" y="324"/>
         </scene>
