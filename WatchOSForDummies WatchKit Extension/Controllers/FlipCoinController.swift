@@ -46,6 +46,8 @@ class FlipCoinController: WKInterfaceController {
         //ANNOTATION: - True for heads and false for tails
         let flipedCoin = Bool.random()
         let stringToShow = (flipedCoin == true) ? "Heads" : "Tails"
-        self.presentAlert(withTitle: stringToShow, message: nil, preferredStyle: .alert, actions: [WKAlertAction(title: "OK", style: .default, handler: {})])
+        self.presentAlert(withTitle: stringToShow, message: nil, preferredStyle: .alert, actions: [WKAlertAction(title: "OK", style: .default, handler: {
+            self.popToRootController()
+        })])
     }
 }

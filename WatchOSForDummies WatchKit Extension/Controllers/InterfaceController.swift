@@ -17,7 +17,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var optionsTable: WKInterfaceTable!
     
     var tableItemBackgroundColor = [UIColor.red, UIColor.green]
-    var tableImageItem = [UIImage(named: "CoffeeImage"), UIImage(named: "IconImage")]
+    var tableImageItem = [UIImage(named: "coffee"), UIImage(named: "coin")]
     var tableItems = ["CountCoff", "FlipCoin"]
     
     override func awake(withContext context: Any?) {

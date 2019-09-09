@@ -53,7 +53,40 @@
         <!--countCoffeeId-->
         <scene sceneID="QUV-et-q8b">
             <objects>
-                <controller identifier="countCoffeeId" id="AaJ-Bi-M2i" customClass="CountCoffeeController" customModule="WatchOSForDummies_WatchKit_Extension"/>
+                <controller identifier="countCoffeeId" id="AaJ-Bi-M2i" customClass="CountCoffeeController" customModule="WatchOSForDummies_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="lcV-bO-S8B">
+                            <items>
+                                <group width="38" height="38" alignment="center" id="aC8-pA-EpJ">
+                                    <items>
+                                        <button width="38" height="38" alignment="center" title="Button" id="sd4-BL-2Bb"/>
+                                    </items>
+                                </group>
+                                <group width="40" height="40" alignment="center" verticalAlignment="center" id="78a-aR-DdN">
+                                    <items>
+                                        <label width="40" height="40" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="55E-yv-BqR">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="38" height="38" alignment="center" verticalAlignment="bottom" id="6gU-9I-6gS">
+                                    <items>
+                                        <button width="38" height="38" alignment="center" verticalAlignment="bottom" title="Button" id="d1R-NT-soO"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="countCoffeeGroup" destination="lcV-bO-S8B" id="wDo-7R-Qbk"/>
+                        <outlet property="lessCountButton" destination="sd4-BL-2Bb" id="y1Y-D2-7CE"/>
+                        <outlet property="lessCountGroup" destination="aC8-pA-EpJ" id="dZb-3m-Ulr"/>
+                        <outlet property="moreCountButton" destination="d1R-NT-soO" id="Cza-5D-4aj"/>
+                        <outlet property="moreCountGroup" destination="6gU-9I-6gS" id="By3-eL-w8a"/>
+                        <outlet property="showCoffeeGroup" destination="78a-aR-DdN" id="X1u-fc-L1v"/>
+                        <outlet property="showCoffeeLabel" destination="55E-yv-BqR" id="Iq4-ca-tOz"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="361" y="-15"/>
         </scene>
