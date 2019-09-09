@@ -59,7 +59,11 @@
                             <items>
                                 <group width="38" height="38" alignment="center" id="aC8-pA-EpJ">
                                     <items>
-                                        <button width="38" height="38" alignment="center" title="Button" id="sd4-BL-2Bb"/>
+                                        <button width="38" height="38" alignment="center" title="Button" id="sd4-BL-2Bb">
+                                            <connections>
+                                                <action selector="lessCountCoffee" destination="AaJ-Bi-M2i" id="zJU-Vq-CdF"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="40" height="40" alignment="center" verticalAlignment="center" id="78a-aR-DdN">
@@ -71,7 +75,11 @@
                                 </group>
                                 <group width="38" height="38" alignment="center" verticalAlignment="bottom" id="6gU-9I-6gS">
                                     <items>
-                                        <button width="38" height="38" alignment="center" verticalAlignment="bottom" title="Button" id="d1R-NT-soO"/>
+                                        <button width="38" height="38" alignment="center" verticalAlignment="bottom" title="Button" id="d1R-NT-soO">
+                                            <connections>
+                                                <action selector="moreCountCoffee" destination="AaJ-Bi-M2i" id="ZO4-D3-qrn"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>

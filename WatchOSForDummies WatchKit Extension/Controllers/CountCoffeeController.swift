@@ -21,6 +21,8 @@ class CountCoffeeController: WKInterfaceController {
     @IBOutlet weak var moreCountGroup: WKInterfaceGroup!
     @IBOutlet weak var moreCountButton: WKInterfaceButton!
     
+    private var countCoffe = 0
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -47,6 +49,35 @@ class CountCoffeeController: WKInterfaceController {
         moreCountButton.setBackgroundImage(UIImage(named: "up_arrow"))
         moreCountButton.setTitle("")
         showCoffeeGroup.setBackgroundColor(.green)
-        showCoffeeLabel.setText("0")
+        showCoffeeLabel.setText("\(countCoffe)")
+    }
+    
+    @IBAction func lessCountCoffee() {
+        
+        //ANNOTATION: - Less coffees
+        if (countCoffe <= 0) {
+            print("Can't do anything")
+        } else {
+            countCoffe -= 1
+            validateColorToShow(countToCompare: countCoffe)
+            showCoffeeLabel.setText("\(countCoffe)")
+        }
+    }
+    
+    @IBAction func moreCountCoffee() {
+        //ANNOTATION: - More coffees
+        countCoffe += 1
+        validateColorToShow(countToCompare: countCoffe)
+        showCoffeeLabel.setText("\(countCoffe)")
+    }
+    
+    func validateColorToShow(countToCompare: Int) {
+        var colorToShow = UIColor.green
+        if (countToCompare >= 3 && countToCompare <= 5) {
+            colorToShow = .orange
+        } else if (countToCompare >= 6) {
+            colorToShow = .red
+        }
+        showCoffeeGroup.setBackgroundColor(colorToShow)
     }
 }
